@@ -10,8 +10,7 @@ const AvailableMeals = (props) => {
 
     useEffect(() => {
         const fetchMeals = async () => {
-            //const response = await fetch('https://react-http-aafdf-default-rtdb.firebaseio.com/meals.json');
-            const response = await fetch('https://react-food-order-ab2e8-default-rtdb.firebaseio.com/meals.json');
+            const response = await fetch('https://react-http-aafdf-default-rtdb.firebaseio.com/meals.json');
             console.log("resp is ", response);
             if (response.statusText !== 'OK') {
                 //setHttpError('Error: Failed to load data from server!!!');
